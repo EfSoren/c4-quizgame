@@ -26,7 +26,7 @@
     opacity: 85%;
 }
 .quizbox{
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
@@ -34,7 +34,19 @@
 }
 .answerButton{
     display: flex;
-    
+    background-color: var(--maroon);
+    border-radius: 25%;
+    color: white;
+    min-width: 100px;
+    width:fit-content;
+    font-size: 24px;
+    margin: auto;
+    padding: 0;
+    text-align: right;
+    justify-content: space-evenly;
+}
+.submitBtn{
+    display: flex;
     background-color: var(--maroon);
     border-radius: 25%;
     color: white;
@@ -56,7 +68,33 @@
     width: 3rem;
 
 }
+
+#enterName{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 3rem;
+    background-color: lightgray;
+    border: 2px solid black;
+    font-size: 24px;
+    display: none;
+}
+.scoreBoard{
+    display: inline;
+    width: auto;
+    height: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    list-style: none;
+    text-align: left;
+   color: var(--maroon);
+}
+
+.highScoreLink{
+    display: flex;
+}
 .endScreen{
     font-size: 4rem;
-    color: var(--maroon)
 }
